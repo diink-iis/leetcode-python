@@ -1,9 +1,9 @@
-from add_two_num import Solution, ListNode
+from add_two_num import Solution
 from longest_substring import Solution
+from find_median import Solution
 
 def main():
-    print(Solution.lengthOfLongestSubstring("abcabcbb"))
+    print(Solution.findMedianSortedArrays(nums1 = [1,3], nums2 = [2]))
 
 if __name__ == '__main__':
     main()
-    print(max(0, 1, 2))
