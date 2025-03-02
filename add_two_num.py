@@ -6,6 +6,13 @@ class ListNode:
         self.val = val
         self.next = next
 
+def list_to_linkedlist(lst):
+    dummy = ListNode()
+    current = dummy
+    for num in lst:
+        current.next = ListNode(num)
+        current = current.next
+    return dummy.next
 
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
